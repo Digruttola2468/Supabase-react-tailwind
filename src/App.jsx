@@ -17,8 +17,8 @@ function App() {
   useEffect(() => {
     supabase.auth.onAuthStateChange((evt, session) => {
       console.log(evt, session);
-      if (!session) navegate("/login");
-      else navegate("/");
+      if (!session) navegate("/Supabase-react-tailwind/login");
+      else navegate("/Supabase-react-tailwind/");
     });
   }, []);
 
@@ -26,9 +26,10 @@ function App() {
     <>
       <TaskProvider>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/verifyYourEmail" element={<VerifyEmail />} />
+          <Route path="/Supabase-react-tailwind/" element={<Home />} />
+          <Route path="/Supabase-react-tailwind/login" element={<Login />} />
+          <Route path="/Supabase-react-tailwind/verifyYourEmail" element={<VerifyEmail />} />
+          <Route path="/Supabase-react-tailwind/*" element={<NotFound />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </TaskProvider>

@@ -13,7 +13,7 @@ export default function Home() {
   useEffect(() => {
     async function getUserSupabase() {
       const getinfo = await supabase.auth.getUser();
-      if (getinfo.data.user == null) navegar("/login");
+      if (getinfo.data.user == null) navegar("/Supabase-react-tailwind/login");
     }
     getUserSupabase();
   }, [navegar]);

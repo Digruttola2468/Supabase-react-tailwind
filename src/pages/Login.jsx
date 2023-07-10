@@ -40,7 +40,7 @@ export default function Login() {
 
         if (error) throw error;
 
-        if (data.user.identities.length != 0) navegar("/verifyYourEmail");
+        if (data.user.identities.length != 0) navegar("/Supabase-react-tailwind/verifyYourEmail");
       }
     } catch (error) {
       console.error(error);
