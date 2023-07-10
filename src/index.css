@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.li-menu {
+    @apply ml-3 hover:bg-blue-200 px-3 transition-colors duration-300 font-semibold
+}
+
+.button-custom {
+    @apply border-gray-border border rounded p-2 w-[150px] transition-colors duration-700 active:bg-blue-800 flex flex-row justify-center 
+}
+
+.input-custom {
+    @apply outline-none border-gray-border border rounded px-2 py-2 focus:border-blue-500
+}
+
+.li-image-setting {
+    @apply p-2 cursor-pointer hover:bg-blue-200
+}
